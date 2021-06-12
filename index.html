@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Library App !</title>
+        <link rel = "stylesheet" href = "index.css">
+    </head>
+    <body>
+        <div id = "container">
+            <h2> Welcome to the Witcher's Library</h2>
+            <a href = "#add_new_book"><button id = "add_book_button">Add New Book</button></a>
+            <table id = "list_of_books" border="2">
+                <thead id ="table_heading">
+                    <tr>
+                        <th>Sr.No</th>
+                        <th class = "large">Book Name</th>
+                        <th>Author</th>
+                        <th>Page Count</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id = "table_body">
+                </tbody>
+            </table>
+        </div>
+        <div id = "add_new_book">
+            <h3>Input book details</h3>
+            <form id = "add_new_book_form">
+                <input name = "book_name" type = "text" placeholder="Enter Book Name"><br>
+                <input name = "book_author" type = "text" placeholder="Enter Author Name"><br>
+                <input name = "book_pages" type = "text" placeholder="Enter Page Count"><br>
+                <select id = "book_status">
+                    <option value = "" selected> Select Book Status from below : </option>
+                    <option value = "To Be Read">To Be Read</option>
+                    <option value = "In Progress">In Progress</option>
+                    <option value = "Completed.">Completed</option>
+                </select><br>
+                <button type = "button" id = "add_book_submit">Submit</button>
+            </form>
+        </div>
+        <div id = "edit_book_details">
+            <h3>Update book information</h3>
+            <h4 id = "edit_book_id"></h4>
+            <form id = "edit_book_form">
+                <select id = "edit_book_status">
+                    <option value = "To Be Read">To Be Read</option>
+                    <option value = "In Progress">In Progress</option>
+                    <option value = "Completed.">Completed</option>
+                </select><br>   
+                <button type = "submit" id = "edit_book_submit">Submit</button>             
+            </form>
+        </div>        
+    </body>
+    <script src = "index.js"></script>
+</html>

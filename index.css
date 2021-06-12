@@ -1,0 +1,46 @@
+#container, #add_new_book, #edit_book_details {
+    width:60%;
+    margin:20px auto 20px auto;
+    border:1px solid black;
+    border-radius:10px;
+    height:auto;
+    text-align:center;
+}
+
+#add_new_book,#edit_book_details  {
+    visibility:hidden;
+    height:0%;
+}
+
+#add_new_book input,select,option {
+    width:70%;
+    height:5%;
+    margin:10px;
+    font-size:12px;
+}
+
+#add_new_book button {
+    width:10%;
+    height:5%;
+    border-radius: 10px;
+}
+
+#list_of_books{
+    text-align:center;
+    margin:20px auto 20px auto;
+}
+
+#list_of_books th,td{
+    width:100px;
+}
+
+.large {
+    width:150px !important;
+}
+
+#add_book_button {
+    margin:-40px 0px -10px 590px;
+    height:40px;
+    border-radius:10px;
+    font-size:12px;
+}
