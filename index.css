@@ -1,3 +1,7 @@
+body {
+    background-color:#17A589;
+}
+
 #container, #add_new_book, #edit_book_details, #select_storage {
     width:60%;
     margin:20px auto 20px auto;
@@ -5,6 +9,7 @@
     border-radius:10px;
     height:auto;
     text-align:center;
+    background-color: #1ABC9C;
 }
 
 #add_new_book, #edit_book_details, #select_storage  {
@@ -12,7 +17,7 @@
     height:0%;
 }
 
-#add_new_book input,select,option {
+#add_new_book input,select {
     width:70%;
     height:5%;
     margin:10px;
@@ -20,6 +25,12 @@
 }
 
 #add_new_book button {
+    width:10%;
+    height:5%;
+    border-radius: 10px;
+}
+
+#edit_book_details button {
     width:10%;
     height:5%;
     border-radius: 10px;
@@ -43,6 +54,7 @@
     height:40px;
     border-radius:10px;
     font-size:12px;
+    background-color: #1ABC9C;
 }
 
 #select_storage_button {
@@ -50,6 +62,7 @@
     height:40px;
     border-radius:10px;
     font-size:12px;   
+    background-color: #1ABC9C;
 }
 
 .select_storage_box {
@@ -63,4 +76,23 @@
 
 .select_storage_box h4 {
     margin-top:40px;
+}
+
+td button {
+    height:30px;
+    width:80px;
+    border-radius:10px;
+    background-color: #1ABC9C;    
+}
+
+#add_book_submit, #edit_book_submit {
+    background-color: #1ABC9C;    
+}
+
+#add_book_button:hover, #select_storage_button:hover, td button:hover, #add_book_submit:hover, #edit_book_submit:hover {
+    background-color: #76D7C4;    
+}
+
+select {
+    border:none;
 }
